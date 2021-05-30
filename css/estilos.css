@@ -1,0 +1,241 @@
+@font-face{
+    font-family: Titulo;
+    scr:url(../fontes/ANODETONOONE.TTF);
+}
+h1{
+    font-family: Titulo;
+    font-size: 40px;
+    color: #603A03
+}
+h2{
+    font-family: Titulo;
+    font-size: 20px;
+    color: #FFF;
+}
+h3{
+    font-family: Titulo;
+    font-size: 20px;
+    color: #603A03;
+}
+#fim{
+    width: 500px;
+    height: 500px;
+    background-color: #FFF;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    text-align: center;
+    padding: 10px;
+}
+body{
+    background-image: url(../imgs/fundo.jpg);
+}
+#container{
+    width: 950px;
+    height: auto;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+#fundoGame{
+    width: 950px;
+    height: 630px;
+    background-image: url(../imgs/fundo_game.jpg);
+}
+#jogador{
+    width: 125px;
+    height: 64px;
+    position: absolute;
+    left: 8px;
+    top: 179px;
+    background-image: url(../imgs/jogador.gif);
+    background-repeat: no-repeat;
+}
+#inimigo1{
+    width: 256px;
+    height: 66px;
+    position: absolute;
+    left: 689px;
+    top: 253px;
+    background-image: url(../imgs/inimigo1.png);
+}
+#inimigo2{
+    width: 165px;
+    height: 70px;
+    position: absolute;
+    left: 775px;
+    top: 447px;
+    background-image: url(../imgs/inimigo2.png);
+}
+#amigo{
+    width: 44px;
+    height: 51px;
+    position: absolute;
+    left: 10px;
+    top: 464px;
+    background-image: url(../imgs/amigo.png);
+}
+#inicio{
+    width: 350px;
+    height: 350px;
+    background-color: #FFF;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    text-align: center;
+    padding: 10px;
+}
+#disparo{
+    width: 51px;
+    height: 32px;
+    position: absolute;
+    background-image: url(../imgs/energia.png)
+}
+.anima1{
+    width: 256px;
+    height: 66px;
+    background-image: url(../imgs/jogador.gif);
+    animation: play .5s steps(2) infinite;
+    -webkit-animation: play .5s steps(2) infinite;
+    -moz-animation: play .5s steps(2) infinite;
+    -ms-animation: play .5s steps(2) infinite;
+    -o-animation: play .5s steps(2) infinite;
+}
+#explosao1{
+    width: 15px;
+    height: 87px;
+    position: absolute;
+}
+#explosao2{
+    width: 15px;
+    height: 87px;
+    position: absolute;
+}
+#placar{
+    position: absolute;
+    width: 450px;
+    height: 50px;
+    left: 5px;
+    top: 540px;
+}
+#energia{
+    width: 140px;
+    height: 38px;
+    position: absolute;
+    left: 750px;
+    top: 7px;
+}
+button{
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    color: #fff;
+     -moz-user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+@keyframes play{
+    from{background-position: 0px;}
+    to {background-position: -512px;}
+}
+@-webkit-keyframes play{
+    from{background-position: 0px;}
+    to {background-position: -512px;}
+}
+@-moz-keyframes play{
+    from{background-position: 0px;}
+    to {background-position: -512px;}
+}
+@-ms-key-frames play{
+    from{background-position: 0px;}
+    to {background-position: -512px;}
+}
+@-o-keyframes play{
+    from{background-position: 0px;}
+    to {background-position: -512px;}
+}
+.anima2{
+   width: 256px;
+   height: 66px;
+   background-image: url(../imgs/inimigo1.png);
+   animation: play .5s steps(2) infinite;
+    -webkit-animation: play .5s steps(2) infinite;
+    -moz-animation: play .5s steps(2) infinite;
+    -ms-animation: play .5s steps(2) infinite;
+    -o-animation: play .5s steps(2) infinite;
+}
+.anima3{
+    width: 44px;
+    height: 51px;
+    background-image: url(../imgs/amigo.png);
+    animation: play2 .9s steps(2) infinite;
+    -webkit-animation: play2 .9s steps(2) infinite;
+    -moz-animation: play2 .9s steps(2) infinite;
+    -ms-animation: play2 .9s steps(2) infinite;
+    -o-animation: play2 .9s steps(2) infinite;
+}
+@keyframes play2{
+    from{background-position: 0px;}
+    to {background-position: -528px;}
+}
+@-webkit-keyframes play2{
+    from{background-position: 0px;}
+    to {background-position: -528px;}
+}
+@-moz-keyframes play2{
+    from{background-position: 0px;}
+    to {background-position: -528px;}
+}
+@-ms-key-frames play2{
+    from{background-position: 0px;}
+    to {background-position: -528px;}
+}
+@-o-keyframes play2{
+    from{background-position: 0px;}
+    to {background-position: -528px;}
+}
+#explosao3{
+    width: 44px;
+    height: 51px;
+    position: absolute;
+}
+.anima4{
+    width: 44px;
+    height: 51px;
+    background-image: url(../imgs/amigo_explosao.png);
+    animation: play3 .5s steps(7) infinite;
+    -webkit-animation: play3 .5s steps(7) infinite;
+    -moz-animation: play3 .5s steps(7) infinite;
+    -ms-animation: play3 .5s steps(7) infinite;
+    -o-animation: play3 .5s steps(7) infinite;
+}
+@keyframes play3{
+    from {background-position: 0px;}
+    to {background-position: -308px;}
+}
+@-webkit-keyframes play3{
+    from {background-position: 0px;}
+    to {background-position: -308px;}
+}
+@-moz-keyframes play3{
+    from {background-position: 0px;}
+    to {background-position: -308px;}
+}
+@-ms-keyframes play3{
+    from {background-position: 0px;}
+    to {background-position: -308px;}
+}
+@-o-keyframes play3{
+    from {background-position: 0px;}
+    to {background-position: -308px;}
+}
